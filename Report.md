@@ -5,9 +5,12 @@ A description of solution implementation.
 
 ## Learning Algorithm
 
-*Deep Deterministic Policy Gradient (DDPG)* [[1]](https://arxiv.org/abs/1509.02971) learning algorithm was used to succesfully train the agent. At first try, A2C [[2]](https://arxiv.org/abs/1602.01783) algorithm with Gaussian policy was used to train the agent but without any success in learning. Both implementations are contained in Continuous_Control.ipynb.
+At first try, A2C [[2]](https://arxiv.org/abs/1602.01783) algorithm with Gaussian policy was used to train the agent but without any success in learning. After that, *Deep Deterministic Policy Gradient (DDPG)* [[1]](https://arxiv.org/abs/1509.02971) learning algorithm, adapted for the multi-agent environment, was used to succesfully train the agent. Both implementations are contained in Continuous_Control.ipynb.
 
 ### Hyperparameters used (DDPG):
+
+These set of hyperparamethers and model architecture was used, following suggestions from Udacity's forum:
+
 - `n_episodes = 1000` - max number of episodes during training
 - `max_t = 1000` - max number of timesteps in an episode
 - `BUFFER_SIZE = 1e5` - size of replay buffer
